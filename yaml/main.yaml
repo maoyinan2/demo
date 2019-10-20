@@ -1,0 +1,74 @@
+# 冒号+缩进 -》 层级关系；大小写敏感；只能用空格；
+# 三种格式：常量值，对象和数组(-)
+
+# 对象
+# url: http://www.wolfcode.cn（value前空格)
+# server:
+#     host: http://www.wolfcode.cn 
+# key: {child-key: value, child-key2: value2}（flow语法）
+
+# ? （?空格，复杂的key = [complexkey1,complexkey2]）
+#     - complexkey1
+#     - complexkey2
+# :（:空格，复杂的value = [...]）
+#     - complexvalue1
+#     - complexvalue2
+
+# 数组
+# server:
+#     - 120.168.117.21（-后空格）
+#     - 120.168.117.22
+# companies:
+#     -
+#         id: 1
+#         name: company1
+#         price: 200W
+#     -
+#         id: 2
+#         name: company2
+#         price: 500W
+# companies: [{id: 1,name: company1,price: 200W},{id: 2,name: company2,price: 500W}]
+
+# 常量
+# pi: 3.14 / true  / '你好YAML' / ~(null) / yyyy-MM-dd / 2018-02-17T15:02:31+08:00（T连接，+时区）
+
+# 特殊符号
+# ---和...
+# 相当于在一个yaml文件中连续写了两个yaml配置项
+# ---
+# time: 20:03:20
+# player: Sammy Sosa
+# action: strike (miss)
+# ...
+# ---
+# time: 20:03:47
+# player: Sammy Sosa
+# action: grand slam
+# ...
+
+# - !!str 54321 类型转换
+
+# > 和 |
+# accomplishment: >（折叠换行）
+#  Mark set a major league（文本前要有空格）
+#  home run record in 1998.
+# stats: |（保留换行）
+#  65 Home Runs
+#  0.278 Batting Average
+
+# & 和 *
+# [SS: &SS Sammy Sosa]
+# hr:
+# - Mark McGwire
+# - &SS Sammy Sosa（引用）
+# rbi:
+# - *SS 
+# - Ken Griffey
+
+
+
+
+
+
+
+
